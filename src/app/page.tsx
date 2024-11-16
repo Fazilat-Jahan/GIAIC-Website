@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -60,7 +61,7 @@ export default function Home() {
           <main className="flex py-10">
             <div className=" columns-4 gap-10">
             <div className="hover:scale-105 transition duration-150 ">
-            <a href="/">
+            <Link href="/">
                 <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
                   <div >
                     <Image src="/programming_fundamentals.jpg" alt="programming_fundamentals" width={217} height={145} className="rounded-s-none w-full object-cover" />
@@ -69,11 +70,11 @@ export default function Home() {
                     <text>Programming Fundamentals</text>
                   </div>
                 </div>
-              </a>
+              </Link>
               </div>
 
               <div className="hover:scale-105 transition duration-150 ">
-                  <a href="/">
+                  <Link href="/">
                 <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
                   <div >
                     <Image src="/web2-using-nextjs.jpg" alt="web2-using-nextjs" width={217} height={145} className="rounded-s-none w-full object-cover" />
@@ -82,7 +83,7 @@ export default function Home() {
                     <text>Web2 Using NextJS</text>
                   </div>
                 </div>
-              </a>
+              </Link>
               </div>
 
             </div>
@@ -96,7 +97,7 @@ export default function Home() {
             <main className="flex py-10">
               <div className=" columns-4 gap-10">
               <div className="hover:scale-105 transition duration-150 ">
-              <a href="/">
+              <Link href="/">
                   <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
                     <div >
                       <Image src="/Artificial Intelligence.jpg" alt="Artificial Intelligence" width={217} height={145} className="rounded-s-none w-full object-cover" />
@@ -105,11 +106,11 @@ export default function Home() {
                       <text>Artificial Intelligence</text>
                     </div>
                   </div>
-                </a>
+                </Link>
                 </div>
 
                 <div className="hover:scale-105 transition duration-150 ">
-                  <a href="/">
+                  <Link href="/">
                   <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
                     <div >
                       <Image src="/CloudComputing.jpg" alt="CloudComputing" width={217} height={145} className="rounded-s-none w-full object-cover" />
@@ -118,11 +119,11 @@ export default function Home() {
                       <text>Cloud Computing</text>
                     </div>
                   </div>
-                </a>
+                </Link>
                 </div>
 
                 <div className="hover:scale-105 transition duration-150 ">
-                  <a href="/">
+                  <Link href="/">
                     <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold  border-black border-double">
                       <div >
                         <Image src="/web3-metaverse.jpg" alt="web3-metaverse" width={217} height={145} className="rounded-s-none w-full object-cover" />
@@ -131,7 +132,7 @@ export default function Home() {
                         <text>Web 3 and Metaverse</text>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
 
               </div>
