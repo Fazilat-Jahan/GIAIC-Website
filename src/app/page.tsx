@@ -20,7 +20,7 @@ export default function Home() {
                 <a href="#home" className="text-white md:px-5 px-1">Apply</a>
                 {/* <a href="#home" className="text-white md:px-5 px-0.5">Jobs</a>
                 <a href="#home" className="text-white md:px-5 px-0.5">Result</a> */}
-             <a href="#courses" className="text-white md:px-5 px-0.1">Courses</a>
+                <a href="#courses" className="text-white md:px-5 px-0.1">Courses</a>
               </li>
             </ul>
           </div>
@@ -35,8 +35,8 @@ export default function Home() {
             <div className="  items-center justify-center md:pl-14 pl-7 md:pt-14 pt-7  ">
               <h1 className="text-bgcustomBlue md:text-6xl text-4xl font-extrabold"> Governor Sindh</h1>
               <h1 className="text-bgcustomBlue md:text-5xl text-3xl leading-relaxed"> Kamran Khan Tessori</h1>
-              <h1 className="text-sky-500 md:text-4xl text-2xl font-extrabold leading-normal "> Certified Cloud</h1>
-              <h1 className="text-sky-500 md:text-4xl text-2xl font-extrabold leading-normal "> Applied Generative AI</h1>
+              <h1 className="text-sky-500 md:text-4xl text-2xl font-extrabold leading-relaxed "> Certified Cloud</h1>
+              <h1 className="text-sky-500 md:text-4xl text-2xl font-extrabold leading-relaxed "> Applied Generative AI</h1>
               <h1 className="text-sky-500 md:text-4xl text-2xl font-extrabold leading-relaxed ">Engineering (GenEng) </h1>
               <h1 className="text-bgcustomBlue md:text-2xl text-lg font-extrabold leading-relaxed">Earn Upto $5,000/ month</h1>
               <h1 className="text-bgcustomBlue md:text-2xl text-lg font-extrabold leading-relaxed">Now Admissions Are Open In Hyderabad</h1>
@@ -59,31 +59,31 @@ export default function Home() {
             <h1 className="text-bgcustomBlue md:text-4xl text-xl md:font-extrabold font-semibold">Core Courses Sequences</h1>
           </div>
           <main className="flex py-10">
-            <div className=" md:columns-4 columns-1 gap-10 ">
-            <div className="hover:scale-105 transition duration-150 ">
-            <Link href="/">
-                <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
-                  <div >
-                    <Image src="/programming_fundamentals.jpg" alt="programming_fundamentals" width={217} height={145} className="rounded-s-none w-full object-cover" />
+            <div className=" grid sm:grid-cols-1 md:grid-cols-3 gap-10 ">
+              <div className="hover:scale-105 transition duration-150 ">
+                <Link href="/">
+                  <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
+                    <div >
+                      <Image src="/programming_fundamentals.jpg" alt="programming_fundamentals" width={217} height={145} className="rounded-s-none w-full object-cover" />
+                    </div>
+                    <div className="flex px-4 py-2 justify-center items-center h-auto opacity-65 ">
+                      <text>Programming Fundamentals</text>
+                    </div>
                   </div>
-                  <div className="flex px-4 py-2 justify-center items-center h-auto opacity-65 ">
-                    <text>Programming Fundamentals</text>
-                  </div>
-                </div>
-              </Link>
+                </Link>
               </div>
 
               <div className="hover:scale-105 transition duration-150 ">
-                  <Link href="/">
-                <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
-                  <div >
-                    <Image src="/web2-using-nextjs.jpg" alt="web2-using-nextjs" width={217} height={145} className="rounded-s-none w-full object-cover" />
+                <Link href="/">
+                  <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
+                    <div >
+                      <Image src="/web2-using-nextjs.jpg" alt="web2-using-nextjs" width={217} height={145} className="rounded-s-none w-full object-cover" />
+                    </div>
+                    <div className="flex px-4 py-2 justify-center items-center h-auto opacity-65 ">
+                      <text>Web2 Using NextJS</text>
+                    </div>
                   </div>
-                  <div className="flex px-4 py-5 justify-center items-center h-auto opacity-65 ">
-                    <text>Web2 Using NextJS</text>
-                  </div>
-                </div>
-              </Link>
+                </Link>
               </div>
 
             </div>
@@ -92,39 +92,39 @@ export default function Home() {
 
           <div>
             <div>
-              <h1 className="text-bgcustomBlue text-4xl font-extrabold py-4">Advance Courses</h1>
+              <h1 className="text-bgcustomBlue md:text-4xl text-3xl md:font-extrabold font-semibold">Advance Courses</h1>
             </div>
-            <main className="flex py-10">
-              <div className=" columns-4 gap-10">
-              <div className="hover:scale-105 transition duration-150 ">
-              <Link href="/">
-                  <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
-                    <div >
-                      <Image src="/Artificial Intelligence.jpg" alt="Artificial Intelligence" width={217} height={145} className="rounded-s-none w-full object-cover" />
+            <main className=" justify-items-center flex py-10">
+              <div className=" grid sm:grid-cols-1 md:grid-cols-3 gap-10">
+                <div className="hover:scale-105 transition duration-150 ">
+                  <Link href="/">
+                    <div className="overflow-hidden h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
+                      <div >
+                        <Image src="/Artificial Intelligence.jpg" alt="Artificial Intelligence" width={217} height={145} className="rounded-s-none w-full object-cover" />
+                      </div>
+                      <div className="flex px-4 py-5 justify-center items-center h-auto opacity-65 ">
+                        <text>Artificial Intelligence</text>
+                      </div>
                     </div>
-                    <div className="flex px-4 py-5 justify-center items-center h-auto opacity-65 ">
-                      <text>Artificial Intelligence</text>
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
                 </div>
 
                 <div className="hover:scale-105 transition duration-150 ">
                   <Link href="/">
-                  <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
-                    <div >
-                      <Image src="/CloudComputing.jpg" alt="CloudComputing" width={217} height={145} className="rounded-s-none w-full object-cover" />
+                    <div className="overflow-hidden  h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
+                      <div >
+                        <Image src="/CloudComputing.jpg" alt="CloudComputing" width={217} height={145} className="rounded-s-none w-full object-cover" />
+                      </div>
+                      <div className="flex px-4 py-5 justify-center items-center h-auto opacity-65 ">
+                        <text>Cloud Computing</text>
+                      </div>
                     </div>
-                    <div className="flex px-4 py-5 justify-center items-center h-auto opacity-65 ">
-                      <text>Cloud Computing</text>
-                    </div>
-                  </div>
-                </Link>
+                  </Link>
                 </div>
 
                 <div className="hover:scale-105 transition duration-150 ">
                   <Link href="/">
-                    <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold  border-black border-double">
+                    <div className="overflow-hidden  h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold  border-black border-double">
                       <div >
                         <Image src="/web3-metaverse.jpg" alt="web3-metaverse" width={217} height={145} className="rounded-s-none w-full object-cover" />
                       </div>
