@@ -3,24 +3,24 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full ">
+    <div className="min-h-screen w-full overflow-hidden">
 
-      <div className="bg-customBlue fixed w-full backdrop-blur-sm top-0 z-30">
-        <nav className="flex h-16 items-center w-full justify-between m-auto">
-          <div className="px-12 mt-16">
+      <div className="bg-customBlue flex fixed w-full backdrop-blur-sm top-0 z-30">
+        <nav className="flex h-16 items-center w-full justify-between md:m-auto">
+          <div className="md:px-12 px-2 mt-16 ">
             <Image src="/governor house sindh logo.png" alt="logo" width={80} height={113} />
           </div>
-          <div className="text-white opacity-75 font-extrabold text-xl ">
+          <div className="text-white opacity-75 text-center font-bold md:font-extrabold text-sm md:text-xl ">
             Tuition Free Education Program
           </div>
           <div>
-            <ul className="px-9 flex">
+            <ul className="md:px-9 px-3 flex">
               <li>
-                <a href="#home" className="text-white px-5">Home</a>
-                <a href="#home" className="text-white px-5">Apply</a>
-                <a href="#home" className="text-white px-5">Jobs</a>
-                <a href="#home" className="text-white px-5">Result</a>
-                <a href="#courses" className="text-white px-5">Courses</a>
+                <a href="#home" className="text-white md:px-5 px-1">Home</a>
+                <a href="#home" className="text-white md:px-5 px-1">Apply</a>
+                {/* <a href="#home" className="text-white md:px-5 px-0.5">Jobs</a>
+                <a href="#home" className="text-white md:px-5 px-0.5">Result</a> */}
+             <a href="#courses" className="text-white md:px-5 px-0.1">Courses</a>
               </li>
             </ul>
           </div>
@@ -30,22 +30,22 @@ export default function Home() {
       <div className="relative z-0 bg-[url('/GovernorHouseSindh.jpeg')] w-full h-full bg-cover object-contain bg-opacity-50">
         <div className="absolute inset-0 w-full h-full bg-white bg-opacity-80 -z-50"></div>
 
-        <div id="home" className="flex flex-row h-full w-full pt-16">
-          <section className="w-1/2 h-full flex flex-col py-10 items-center justify-center">
-            <div className="  items-center justify-center pl-14 pt-14  ">
-              <h1 className="text-bgcustomBlue text-6xl font-extrabold"> Governor Sindh</h1>
-              <h1 className="text-bgcustomBlue text-5xl leading-relaxed"> Kamran Khan Tessori</h1>
-              <h1 className="text-sky-500 text-4xl font-extrabold leading-normal "> Certified Cloud</h1>
-              <h1 className="text-sky-500 text-4xl font-extrabold leading-normal "> Applied Generative AI</h1>
-              <h1 className="text-sky-500 text-4xl font-extrabold leading-relaxed ">Engineering (GenEng) </h1>
-              <h1 className="text-bgcustomBlue text-2xl font-extrabold leading-relaxed">Earn Upto $5,000/ month</h1>
-              <h1 className="text-bgcustomBlue text-2xl font-extrabold leading-relaxed">Now Admissions Are Open In Hyderabad</h1>
+        <div id="home" className="flex md:flex-row flex-col h-full w-full pt-16">
+          <section className="md:w-1/2 w-full h-full flex md:flex-col flex-row py-10 items-center justify-center">
+            <div className="  items-center justify-center md:pl-14 pl-7 md:pt-14 pt-7  ">
+              <h1 className="text-bgcustomBlue md:text-6xl text-4xl font-extrabold"> Governor Sindh</h1>
+              <h1 className="text-bgcustomBlue md:text-5xl text-3xl leading-relaxed"> Kamran Khan Tessori</h1>
+              <h1 className="text-sky-500 md:text-4xl text-2xl font-extrabold leading-normal "> Certified Cloud</h1>
+              <h1 className="text-sky-500 md:text-4xl text-2xl font-extrabold leading-normal "> Applied Generative AI</h1>
+              <h1 className="text-sky-500 md:text-4xl text-2xl font-extrabold leading-relaxed ">Engineering (GenEng) </h1>
+              <h1 className="text-bgcustomBlue md:text-2xl text-lg font-extrabold leading-relaxed">Earn Upto $5,000/ month</h1>
+              <h1 className="text-bgcustomBlue md:text-2xl text-lg font-extrabold leading-relaxed">Now Admissions Are Open In Hyderabad</h1>
             </div>
           </section>
 
-          <section className="w-1/2 h-full ">
+          <section className="md:w-1/2 w-full h-full mt-7 md:mt-0 ">
             <div className=" relative w-full h-full items-end mt-7">
-              <Image src="/governorsindh.png" alt="Governor Sindh Kamran Khan Tessori" width={0} height={0} sizes="50vw" className="w-full h-full ml-40" />
+              <Image src="/governorsindh.png" alt="Governor Sindh Kamran Khan Tessori" width={0} height={0} sizes="50vw" className="w-full h-full md:ml-40 ml-4" />
             </div>
           </section>
         </div>
@@ -53,13 +53,13 @@ export default function Home() {
 
       <div className="border-t border-gray-300 mt-8 mx-16"></div>
 
-      <div id="courses" className="flex h-auto w-full p-14">
+      <div id="courses" className="flex h-auto w-full md:p-14 p-6">
         <section className="w-full h-auto">
           <div>
-            <h1 className="text-bgcustomBlue text-4xl font-extrabold">Core Courses Sequences</h1>
+            <h1 className="text-bgcustomBlue md:text-4xl text-xl md:font-extrabold font-semibold">Core Courses Sequences</h1>
           </div>
           <main className="flex py-10">
-            <div className=" columns-4 gap-10">
+            <div className=" md:columns-4 columns-1 gap-10 ">
             <div className="hover:scale-105 transition duration-150 ">
             <Link href="/">
                 <div className="overflow-hidden flex flex-col h-fit justify-center items-center shadow-2xl rounded-lg text-center text-lg font-bold ">
